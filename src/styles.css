@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@source "../src";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+
+  --color-brandNavy: #1F3A5F;
+  --color-brandNavy-light: #2b4f80;
+  --color-brandCrimson: #8B1E1E;
+  --color-brandCrimson-hover: #a82424;
+  --color-brandCrimson-glow: rgba(139, 30, 30, 0.15);
+
+  --color-pageBg: #F7F7F7;
+  --color-bodyText: #2B2B2B;
+  --color-borderColor: #E2E2E2;
+  --color-darkTheme: #020617;
+  --color-darkCard: #0b1120;
+  --color-darkBorder: rgba(255, 255, 255, 0.1);
+
+  --animate-spin-slow: spin 12s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-outfit);
+  }
+
+  body {
+    background-color: var(--color-pageBg);
+    color: var(--color-bodyText);
+    overflow-x: hidden;
+  }
+
+  .dark body {
+    background-color: var(--color-darkTheme);
+    color: #f1f5f9;
+  }
+}
+
+/* Glassmorphism & Card Utilities */
+.glass-nav {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-borderColor);
+}
+
+.dark .glass-nav {
+  background-color: rgba(2, 6, 23, 0.85);
+  border-bottom: 1px solid var(--color-darkBorder);
+}
+
+.premium-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-borderColor);
+  border-radius: 1.75rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .premium-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-darkBorder);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.07);
+}
+
+.dark .premium-card:hover {
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button Utilities */
+.btn-cta {
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-brandCrimson);
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(139, 30, 30, 0.25);
+}
+
+.btn-cta:hover {
+  background-color: var(--color-brandNavy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 58, 95, 0.3);
+}
+
+.btn-outline {
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-brandNavy);
+  color: var(--color-brandNavy);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-brandNavy);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.dark .btn-outline {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.dark .btn-outline:hover {
+  background-color: var(--color-brandCrimson);
+  border-color: var(--color-brandCrimson);
+}
+
+/* Background Subtle Dot Pattern */
+.bg-dots {
+  background-image: radial-gradient(rgba(31, 58, 95, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
