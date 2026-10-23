@@ -14,10 +14,10 @@ export function ContactSection() {
           <Badge variant="default" className="mb-3">
             Connect & Partner
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-brandNavy dark:text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#111111] dark:text-white mb-4">
             Let&apos;s Build Together
           </h2>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-[#737373] dark:text-gray-400 max-w-2xl mx-auto">
             Whether you&apos;re developing an AI product, scaling design operations, or launching an ambitious venture, I&apos;d love to connect.
           </p>
         </div>
@@ -25,10 +25,10 @@ export function ContactSection() {
         {submitted ? (
           <div className="premium-card p-12 text-center max-w-xl mx-auto space-y-4">
             <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto animate-bounce" />
-            <h3 className="text-2xl font-bold text-brandNavy dark:text-white">
+            <h3 className="text-2xl font-bold text-[#111111] dark:text-white">
               Message Received!
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-[#737373] dark:text-gray-300">
               Thank you for reaching out. I'll review your inquiry and get back to you promptly.
             </p>
             <Button
@@ -48,7 +48,7 @@ export function ContactSection() {
             <input type="hidden" name="subject" value="Dijup Tuladhar - New Portfolio Inquiry" />
 
             <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-brandNavy/70 dark:text-gray-300 ml-2">
+              <label className="text-xs font-bold uppercase tracking-wider text-[#111111] dark:text-gray-300 ml-2">
                 Your Name
               </label>
               <input
@@ -56,12 +56,12 @@ export function ContactSection() {
                 name="name"
                 required
                 placeholder="Jane Doe"
-                className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-brandCrimson text-sm font-medium transition-all"
+                className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-[#111111] dark:focus:ring-white text-sm font-medium transition-all text-[#111111] dark:text-white placeholder:text-gray-400"
               />
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-brandNavy/70 dark:text-gray-300 ml-2">
+              <label className="text-xs font-bold uppercase tracking-wider text-[#111111] dark:text-gray-300 ml-2">
                 Email Address
               </label>
               <input
@@ -69,12 +69,12 @@ export function ContactSection() {
                 name="email"
                 required
                 placeholder="jane@example.com"
-                className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-brandCrimson text-sm font-medium transition-all"
+                className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-[#111111] dark:focus:ring-white text-sm font-medium transition-all text-[#111111] dark:text-white placeholder:text-gray-400"
               />
             </div>
 
             <div className="space-y-2 md:col-span-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-brandNavy/70 dark:text-gray-300 ml-2">
+              <label className="text-xs font-bold uppercase tracking-wider text-[#111111] dark:text-gray-300 ml-2">
                 Message
               </label>
               <textarea
@@ -82,7 +82,7 @@ export function ContactSection() {
                 required
                 rows={5}
                 placeholder="How can we collaborate? Share your project goals or challenge..."
-                className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-brandCrimson text-sm font-medium transition-all resize-none"
+                className="w-full px-6 py-4 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-[#111111] dark:focus:ring-white text-sm font-medium transition-all resize-none text-[#111111] dark:text-white placeholder:text-gray-400"
               />
             </div>
 

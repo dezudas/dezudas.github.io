@@ -46,7 +46,7 @@ export const metricsData: MetricItem[] = [
   {
     id: 'musicians',
     label: 'Active Musicians',
-    value: 'Thousands',
+    value: '400+',
   },
   {
     id: 'reach',
@@ -109,7 +109,7 @@ export const focusAreasData: FocusArea[] = [
 
 export const chordpediaStats: ChordpediaStat[] = [
   { value: '1,000+', label: 'Chords & Songs', isHighlight: true },
-  { value: 'Thousands', label: 'Active Musicians' },
+  { value: '400', label: 'Active Musicians' },
   { value: 'Artist Hub', label: 'Profiles & Badges' },
   { value: 'Music Events', label: 'Ticketing & Shows' },
   { value: 'AI Tools', label: 'Chord Recognition', isHighlight: true },
@@ -152,10 +152,8 @@ export const roadmapData: RoadmapItem[] = [
 export const techStackData: TechStackItem[] = [
   { category: 'Frontend', name: 'React Native', description: 'Cross-platform mobile apps' },
   { category: 'Frontend', name: 'Angular / JS', description: 'Enterprise UI applications' },
-  { category: 'Backend', name: '.NET', description: 'Enterprise microservices & APIs' },
   { category: 'Backend', name: 'PHP & MySQL', description: 'Relational data & high-volume DBs' },
   { category: 'Future Tech', name: 'Gen AI APIs', description: 'LLM UX, prompt architectures' },
-  { category: 'DevOps', name: 'Docker & Azure', description: 'Containerized CI/CD & cloud' },
 ]
 
 export const offeringsData: ServiceOffering[] = [

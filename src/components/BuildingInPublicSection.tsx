@@ -3,16 +3,16 @@ import { Badge } from '@/components/ui/badge'
 
 const colorConfig = {
   crimson: {
-    dot: 'bg-brandCrimson animate-pulse',
-    badge: 'bg-brandCrimson/10 text-brandCrimson border-brandCrimson/25 dark:text-red-300',
+    dot: 'bg-[#111111] dark:bg-white animate-pulse',
+    badge: 'bg-[#111111]/8 text-[#111111] border-[#111111]/20 dark:bg-white/10 dark:text-white dark:border-white/20',
   },
   yellow: {
     dot: 'bg-amber-500',
     badge: 'bg-amber-500/10 text-amber-700 border-amber-500/25 dark:text-amber-300',
   },
   navy: {
-    dot: 'bg-brandNavy dark:bg-sky-400',
-    badge: 'bg-brandNavy/10 text-brandNavy border-brandNavy/20 dark:bg-white/10 dark:text-sky-300',
+    dot: 'bg-[#111111] dark:bg-white',
+    badge: 'bg-[#111111]/8 text-[#111111] border-[#111111]/20 dark:bg-white/10 dark:text-white dark:border-white/20',
   },
   green: {
     dot: 'bg-emerald-500',
@@ -22,16 +22,16 @@ const colorConfig = {
 
 export function BuildingInPublicSection() {
   return (
-    <section id="building-in-public" className="w-full px-6 lg:px-8 py-28 bg-white/40 dark:bg-slate-950/40 scroll-mt-20 relative">
+    <section id="building-in-public" className="w-full px-6 lg:px-8 py-28 scroll-mt-20 relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="default" className="mb-3">
             Momentum Tracker
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-brandNavy dark:text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#111111] dark:text-white mb-4">
             Building in Public
           </h2>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-[#737373] dark:text-gray-400 max-w-2xl mx-auto">
             Sharing monthly progress and roadmap milestones as a product builder. Transparent execution from whiteboard to launch.
           </p>
         </div>
@@ -42,15 +42,15 @@ export function BuildingInPublicSection() {
             return (
               <div
                 key={item.id}
-                className="premium-card p-6 md:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-brandNavy/40 dark:hover:border-white/20 transition-all duration-300"
+                className="premium-card p-6 md:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
-                  <div className={`w-3.5 h-3.5 rounded-full mt-1.5 shrink-0 ${config.dot}`} />
+                  <div className={`w-3 h-3 rounded-full mt-1.5 shrink-0 ${config.dot}`} />
                   <div>
-                    <h3 className="text-xl font-bold text-brandNavy dark:text-white">
+                    <h3 className="text-xl font-bold text-[#111111] dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">
+                    <p className="text-sm text-[#737373] dark:text-gray-400 mt-1 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -62,7 +62,7 @@ export function BuildingInPublicSection() {
                   >
                     {item.status}
                   </span>
-                  <span className="text-xs font-bold text-gray-500 dark:text-gray-400">
+                  <span className="text-xs font-bold text-[#737373] dark:text-gray-400">
                     {item.dateOrStage}
                   </span>
                 </div>

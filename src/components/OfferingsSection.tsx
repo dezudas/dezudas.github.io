@@ -11,10 +11,10 @@ export function OfferingsSection() {
           <Badge variant="default" className="mb-3">
             Premium Partnerships
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-brandNavy dark:text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#111111] dark:text-white mb-4">
             Work With Me
           </h2>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-[#737373] dark:text-gray-400 max-w-2xl mx-auto">
             Helping ambitious growth companies ship better products, scale design operations, and implement generative AI UX.
           </p>
         </div>
@@ -25,46 +25,46 @@ export function OfferingsSection() {
               key={offering.id}
               className={`premium-card p-8 md:p-10 flex flex-col justify-between relative transition-all duration-300 ${
                 offering.isPopular
-                  ? 'border-brandCrimson/60 dark:border-brandCrimson/60 shadow-xl ring-2 ring-brandCrimson/20 dark:ring-brandCrimson/30'
-                  : 'hover:border-brandNavy/40 dark:hover:border-white/20'
+                  ? 'border-[#111111] dark:border-white shadow-xl ring-1 ring-[#111111]/10 dark:ring-white/20'
+                  : 'hover:border-[#111111]/30 dark:hover:border-white/20'
               }`}
             >
               {offering.isPopular && (
-                <div className="absolute top-4 right-4 bg-brandCrimson text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full shadow-sm">
+                <div className="absolute top-4 right-4 bg-[#111111] text-white dark:bg-white dark:text-[#111111] text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full shadow-sm">
                   Most Popular
                 </div>
               )}
 
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-brandCrimson dark:text-red-400 mb-3 block">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#737373] dark:text-gray-400 mb-3 block">
                   {offering.badge}
                 </span>
 
-                <h3 className="text-2xl font-black text-brandNavy dark:text-white mb-4">
+                <h3 className="text-2xl font-black text-[#111111] dark:text-white mb-4">
                   {offering.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed mb-8">
+                <p className="text-[#737373] dark:text-gray-300 text-sm md:text-base leading-relaxed mb-8">
                   {offering.description}
                 </p>
 
                 <div className="space-y-3 mb-8 text-xs sm:text-sm">
                   <div className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-brandCrimson shrink-0 mt-0.5" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      <strong>For:</strong> {offering.forWhom}
+                    <Check className="w-4 h-4 text-[#111111] dark:text-white shrink-0 mt-0.5" />
+                    <span className="text-[#737373] dark:text-gray-300">
+                      <strong className="text-[#111111] dark:text-white">For:</strong> {offering.forWhom}
                     </span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-brandCrimson shrink-0 mt-0.5" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      <strong>Challenge:</strong> {offering.problem}
+                    <Check className="w-4 h-4 text-[#111111] dark:text-white shrink-0 mt-0.5" />
+                    <span className="text-[#737373] dark:text-gray-300">
+                      <strong className="text-[#111111] dark:text-white">Challenge:</strong> {offering.problem}
                     </span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-brandCrimson shrink-0 mt-0.5" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      <strong>Deliverable:</strong> {offering.outcome}
+                    <Check className="w-4 h-4 text-[#111111] dark:text-white shrink-0 mt-0.5" />
+                    <span className="text-[#737373] dark:text-gray-300">
+                      <strong className="text-[#111111] dark:text-white">Deliverable:</strong> {offering.outcome}
                     </span>
                   </div>
                 </div>

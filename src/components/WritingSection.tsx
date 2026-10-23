@@ -10,10 +10,10 @@ export function WritingSection() {
           <Badge variant="default" className="mb-3">
             Thought Leadership
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-brandNavy dark:text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#111111] dark:text-white mb-4">
             Recent Writing & Insights
           </h2>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-[#737373] dark:text-gray-400 max-w-2xl mx-auto">
             Documenting product design frameworks, startup growth playbooks, and enterprise healthcare UX strategy.
           </p>
         </div>
@@ -22,36 +22,36 @@ export function WritingSection() {
           {articlesData.map((article) => (
             <div
               key={article.id}
-              className="premium-card p-8 md:p-10 flex flex-col justify-between hover:border-brandCrimson/40 dark:hover:border-brandCrimson/40 transition-all duration-300 group"
+              className="premium-card p-8 md:p-10 flex flex-col justify-between transition-all duration-300 group"
             >
               <div>
                 <div className="flex items-center gap-3 mb-5">
-                  <span className="px-3 py-1 bg-brandCrimson/10 text-brandCrimson text-xs font-bold uppercase rounded-full tracking-wider dark:text-red-300">
+                  <span className="px-3 py-1 bg-[#111111]/8 text-[#111111] border border-[#111111]/15 dark:bg-white/10 dark:text-white dark:border-white/20 text-xs font-bold uppercase rounded-full tracking-wider">
                     {article.tag}
                   </span>
-                  <span className="text-xs text-gray-400 font-medium">
+                  <span className="text-xs text-[#737373] dark:text-gray-400 font-medium">
                     {article.readTime}
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold text-brandNavy dark:text-white group-hover:text-brandCrimson transition-colors mb-4 leading-snug">
+                <h3 className="text-2xl font-bold text-[#111111] dark:text-white group-hover:text-[#111111]/70 dark:group-hover:text-gray-300 transition-colors mb-4 leading-snug">
                   {article.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-6">
+                <p className="text-[#737373] dark:text-gray-300 text-base leading-relaxed mb-6">
                   {article.summary}
                 </p>
               </div>
 
               <div className="pt-4 border-t border-borderColor/60 dark:border-white/10">
                 {article.isDraft ? (
-                  <span className="text-xs font-bold text-gray-400 inline-flex items-center gap-1.5 uppercase tracking-wider">
+                  <span className="text-xs font-bold text-[#737373] dark:text-gray-400 inline-flex items-center gap-1.5 uppercase tracking-wider">
                     <BookOpen className="w-3.5 h-3.5" /> Upcoming Release
                   </span>
                 ) : (
                   <a
                     href={article.url || '#contact'}
-                    className="text-brandCrimson dark:text-red-400 font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-all"
+                    className="text-[#111111] dark:text-white font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-all"
                   >
                     Read Article
                     <ArrowRight className="w-4 h-4" />

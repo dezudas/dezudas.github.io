@@ -50,8 +50,8 @@ export function Navbar() {
           className="group flex items-center gap-1.5 focus:outline-none"
           aria-label="Dijup Tuladhar Home"
         >
-          <span className="text-2xl font-black tracking-tighter text-brandNavy dark:text-white transition-transform duration-300 group-hover:scale-105">
-            DIJUP<span className="text-brandCrimson">.</span>
+          <span className="text-2xl font-black tracking-tighter text-[#111111] dark:text-white transition-transform duration-300 group-hover:scale-105">
+            DIJUP<span className="text-[#111111] dark:text-white">.</span>
           </span>
         </Link>
 
@@ -71,7 +71,7 @@ export function Navbar() {
               <a
                 key={item.label}
                 href={targetHref}
-                className="text-sm font-semibold text-brandNavy dark:text-gray-200 hover:text-brandCrimson dark:hover:text-brandCrimson transition-colors duration-200"
+                className="text-sm font-semibold text-[#111111] dark:text-gray-200 hover:text-[#737373] dark:hover:text-white transition-colors duration-200"
               >
                 {item.label}
               </a>
@@ -85,12 +85,12 @@ export function Navbar() {
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark mode"
-            className="p-2.5 rounded-full text-brandNavy dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-all active:scale-90"
+            className="p-2.5 rounded-full text-[#111111] dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-all active:scale-90"
           >
             {theme === 'dark' ? (
               <Sun className="w-5 h-5 text-amber-400 animate-in spin-in-180 duration-300" />
             ) : (
-              <Moon className="w-5 h-5 text-brandNavy animate-in spin-in-180 duration-300" />
+              <Moon className="w-5 h-5 text-[#111111] animate-in spin-in-180 duration-300" />
             )}
           </button>
 
@@ -99,7 +99,7 @@ export function Navbar() {
             href="https://chordpedia.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-brandCrimson/30 text-brandCrimson hover:bg-brandCrimson hover:text-white dark:border-brandCrimson/50 dark:text-red-400 dark:hover:bg-brandCrimson dark:hover:text-white transition-all text-xs font-bold uppercase tracking-wider active:scale-95"
+            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#111111]/25 text-[#111111] hover:bg-[#111111] hover:text-white dark:border-white/30 dark:text-white dark:hover:bg-white dark:hover:text-[#111111] transition-all text-xs font-bold uppercase tracking-wider active:scale-95"
           >
             Chordpedia ⚡
           </a>
@@ -121,7 +121,7 @@ export function Navbar() {
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild>
               <button
-                className="md:hidden p-2.5 rounded-full text-brandNavy dark:text-white hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
+                className="md:hidden p-2.5 rounded-full text-[#111111] dark:text-white hover:bg-black/5 dark:hover:bg-white/10 active:scale-90"
                 aria-label="Open mobile menu"
               >
                 <Menu className="w-6 h-6" />
@@ -131,7 +131,7 @@ export function Navbar() {
               <div>
                 <SheetHeader>
                   <SheetTitle>
-                    DIJUP<span className="text-brandCrimson">.</span>
+                    DIJUP<span className="text-[#111111] dark:text-white">.</span>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-4 mt-8">
@@ -140,7 +140,7 @@ export function Navbar() {
                       key={item.label}
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
-                      className="text-lg font-bold text-brandNavy dark:text-gray-100 hover:text-brandCrimson transition-colors py-2 border-b border-borderColor/40 dark:border-white/5"
+                      className="text-lg font-bold text-[#111111] dark:text-gray-100 hover:text-[#737373] transition-colors py-2 border-b border-borderColor/40 dark:border-white/5"
                     >
                       {item.label}
                     </a>
@@ -149,7 +149,7 @@ export function Navbar() {
                     href="https://chordpedia.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between text-base font-bold text-brandCrimson py-2 mt-2"
+                    className="flex items-center justify-between text-base font-bold text-[#111111] dark:text-white hover:text-[#737373] py-2 mt-2"
                   >
                     <span>Chordpedia.com</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -163,7 +163,7 @@ export function Navbar() {
                     Get In Touch
                   </a>
                 </Button>
-                <p className="text-xs text-center text-gray-500 dark:text-gray-400">
+                <p className="text-xs text-center text-[#737373] dark:text-gray-400">
                   connect@dijup.com
                 </p>
               </div>
