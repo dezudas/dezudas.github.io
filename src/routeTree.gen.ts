@@ -14,6 +14,9 @@ import { Route as InitiativesRouteImport } from './routes/initiatives'
 import { Route as OfferingsRouteImport } from './routes/offerings'
 import { Route as SpeakingRouteImport } from './routes/speaking'
 import { Route as WritingRouteImport } from './routes/writing'
+import { Route as ArticleSlugRouteImport } from './routes/article.$slug'
+import { Route as ArticlesIndexRouteImport } from './routes/articles.index'
+import { Route as ArticlesSlugRouteImport } from './routes/articles.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,6 +43,21 @@ const WritingRoute = WritingRouteImport.update({
   path: '/writing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArticleSlugRoute = ArticleSlugRouteImport.update({
+  id: '/article/$slug',
+  path: '/article/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesIndexRoute = ArticlesIndexRouteImport.update({
+  id: '/articles/',
+  path: '/articles/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesSlugRoute = ArticlesSlugRouteImport.update({
+  id: '/articles/$slug',
+  path: '/articles/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +65,9 @@ export interface FileRoutesByFullPath {
   '/offerings': typeof OfferingsRoute
   '/speaking': typeof SpeakingRoute
   '/writing': typeof WritingRoute
+  '/article/$slug': typeof ArticleSlugRoute
+  '/articles/$slug': typeof ArticlesSlugRoute
+  '/articles/': typeof ArticlesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +75,9 @@ export interface FileRoutesByTo {
   '/offerings': typeof OfferingsRoute
   '/speaking': typeof SpeakingRoute
   '/writing': typeof WritingRoute
+  '/article/$slug': typeof ArticleSlugRoute
+  '/articles/$slug': typeof ArticlesSlugRoute
+  '/articles': typeof ArticlesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,14 +86,41 @@ export interface FileRoutesById {
   '/offerings': typeof OfferingsRoute
   '/speaking': typeof SpeakingRoute
   '/writing': typeof WritingRoute
+  '/article/$slug': typeof ArticleSlugRoute
+  '/articles/$slug': typeof ArticlesSlugRoute
+  '/articles/': typeof ArticlesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/initiatives' | '/offerings' | '/speaking' | '/writing'
+  fullPaths:
+    | '/'
+    | '/initiatives'
+    | '/offerings'
+    | '/speaking'
+    | '/writing'
+    | '/article/$slug'
+    | '/articles/$slug'
+    | '/articles/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/initiatives' | '/offerings' | '/speaking' | '/writing'
+  to:
+    | '/'
+    | '/initiatives'
+    | '/offerings'
+    | '/speaking'
+    | '/writing'
+    | '/article/$slug'
+    | '/articles/$slug'
+    | '/articles'
   id:
-    '__root__' | '/' | '/initiatives' | '/offerings' | '/speaking' | '/writing'
+    | '__root__'
+    | '/'
+    | '/initiatives'
+    | '/offerings'
+    | '/speaking'
+    | '/writing'
+    | '/article/$slug'
+    | '/articles/$slug'
+    | '/articles/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -78,6 +129,9 @@ export interface RootRouteChildren {
   OfferingsRoute: typeof OfferingsRoute
   SpeakingRoute: typeof SpeakingRoute
   WritingRoute: typeof WritingRoute
+  ArticleSlugRoute: typeof ArticleSlugRoute
+  ArticlesSlugRoute: typeof ArticlesSlugRoute
+  ArticlesIndexRoute: typeof ArticlesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -117,6 +171,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WritingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/article/$slug': {
+      id: '/article/$slug'
+      path: '/article/$slug'
+      fullPath: '/article/$slug'
+      preLoaderRoute: typeof ArticleSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles/': {
+      id: '/articles/'
+      path: '/articles'
+      fullPath: '/articles/'
+      preLoaderRoute: typeof ArticlesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles/$slug': {
+      id: '/articles/$slug'
+      path: '/articles/$slug'
+      fullPath: '/articles/$slug'
+      preLoaderRoute: typeof ArticlesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -126,6 +201,9 @@ const rootRouteChildren: RootRouteChildren = {
   OfferingsRoute: OfferingsRoute,
   SpeakingRoute: SpeakingRoute,
   WritingRoute: WritingRoute,
+  ArticleSlugRoute: ArticleSlugRoute,
+  ArticlesSlugRoute: ArticlesSlugRoute,
+  ArticlesIndexRoute: ArticlesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

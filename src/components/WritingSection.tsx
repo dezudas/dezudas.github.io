@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { articlesData } from '@/lib/portfolio-data'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, BookOpen } from 'lucide-react'
@@ -34,9 +35,21 @@ export function WritingSection() {
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#111111] dark:text-white group-hover:text-[#111111]/70 dark:group-hover:text-gray-300 transition-colors mb-4 leading-snug">
-                  {article.title}
-                </h3>
+                {article.isDraft ? (
+                  <h3 className="text-2xl font-bold text-[#111111] dark:text-white mb-4 leading-snug">
+                    {article.title}
+                  </h3>
+                ) : (
+                  <Link
+                    to="/articles/$slug"
+                    params={{ slug: article.slug }}
+                    className="block group/title"
+                  >
+                    <h3 className="text-2xl font-bold text-[#111111] dark:text-white group-hover/title:text-[#737373] dark:group-hover/title:text-gray-300 transition-colors mb-4 leading-snug">
+                      {article.title}
+                    </h3>
+                  </Link>
+                )}
 
                 <p className="text-[#737373] dark:text-gray-300 text-base leading-relaxed mb-6">
                   {article.summary}
@@ -49,13 +62,14 @@ export function WritingSection() {
                     <BookOpen className="w-3.5 h-3.5" /> Upcoming Release
                   </span>
                 ) : (
-                  <a
-                    href={article.url || '#contact'}
+                  <Link
+                    to="/articles/$slug"
+                    params={{ slug: article.slug }}
                     className="text-[#111111] dark:text-white font-bold text-sm inline-flex items-center gap-2 group-hover:translate-x-1 transition-all"
                   >
                     Read Article
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>

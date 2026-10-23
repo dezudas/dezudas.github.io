@@ -63,13 +63,23 @@ export interface SpeakingEngagement {
   urlLabel: string
 }
 
+export interface ArticleSection {
+  heading?: string
+  paragraphs: string[]
+  quote?: string
+  bulletPoints?: string[]
+}
+
 export interface Article {
   id: string
+  slug: string
   tag: string
   readTime: string
+  date?: string
   title: string
   summary: string
-  slug?: string
+  takeaways?: string[]
+  sections?: ArticleSection[]
   url?: string
   isDraft?: boolean
 }

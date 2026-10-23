@@ -261,39 +261,168 @@ export const speakingData: SpeakingEngagement[] = [
 export const articlesData: Article[] = [
   {
     id: 'article-chordpedia',
+    slug: 'building-chordpedia',
     tag: 'Product Strategy',
     readTime: '5 min read',
+    date: 'Sep 2025',
     title: "Building Chordpedia: Lessons from creating Nepal's music platform",
     summary:
-      'How we grew from zero users to thousands of monthly musicians by optimizing for low-latency searches and local community contributions.',
-    url: '#contact',
+      'How we grew from zero users to hundreds of active musicians and thousands of learners by optimizing for low-latency searches, crowd-sourced verification, and community-first product architecture.',
+    takeaways: [
+      'Solving real local friction beats importing generic Silicon Valley templates.',
+      'Low latency is a core product feature: guitarists in jam sessions won’t tolerate a 3-second delay.',
+      'Turning passive consumers into verified community curators scales content with zero editorial bloat.',
+    ],
+    sections: [
+      {
+        heading: 'The Unsolved Problem in Nepali Music',
+        paragraphs: [
+          'A decade ago, learning Nepali songs on guitar or piano was an exercise in frustration. Chords and lyrics were scattered across obscure blog posts, fragmented Facebook groups, and poorly formatted text files with inaccurate key transpositions.',
+          'Musicians in rehearsal studios or campfire gatherings had no authoritative, mobile-responsive source of truth. As a designer and builder who loves music, I recognized this wasn’t merely an archiving gap—it was a product design and usability challenge.',
+        ],
+        quote: '“Great products don’t just host content; they eliminate friction at the exact moment of user inspiration.”',
+      },
+      {
+        heading: 'Architecture for Jam Sessions: Sub-Second Latency',
+        paragraphs: [
+          'When designing Chordpedia, our primary design heuristic was immediacy. If a guitarist is midway through a jam session and searches for an intro chord, every millisecond matters. On mobile 3G networks in Kathmandu or Pokhara, heavy client bundles and round-trip API queries fail the user.',
+          'We engineered client-side transposition algorithms in vanilla JavaScript and React Native, caching chord charts locally. Transposing from C Major to G# Minor happens instantaneously without re-fetching from the server. This technical design decision instantly made Chordpedia the default app on stage and in rehearsal rooms.',
+        ],
+        bulletPoints: [
+          'Client-side instant key transposition with zero network latency',
+          'Offline caching for uninterrupted rehearsal room performance',
+          'Minimalist typography tailored for mobile visibility at arm’s length on guitar stands',
+        ],
+      },
+      {
+        heading: 'Scaling via Community Ownership',
+        paragraphs: [
+          'A centralized content team could never keep pace with the explosion of indie singles, folk arrangements, and rock releases across Nepal. Instead, we architected a contribution pipeline with peer review mechanisms.',
+          'Top community contributors earn verified curator badges, review submissions, and flag inaccurate fingerings. By treating musicians as stakeholders rather than passive consumers, Chordpedia organically scaled to thousands of songs without ballooning overhead costs.',
+        ],
+      },
+      {
+        heading: 'The Horizon: AI Chord Recognition & Beyond',
+        paragraphs: [
+          'Today, Chordpedia is evolving into a full creative operating system for musicians: developing neural net chord recognition from raw acoustic audio, built-in pitch tuners, and artist monetization tools. The journey taught me that durable product leadership is about listening deeply to a subculture and honoring their craft through reliable software.',
+        ],
+      },
+    ],
+    url: '/articles/building-chordpedia',
   },
   {
     id: 'article-ai-ux',
+    slug: 'ai-wont-replace-designers',
     tag: 'AI & UX',
     readTime: '4 min read',
+    date: 'Jan 2026',
     title: "AI won't replace designers—but it will change how we work",
     summary:
-      'Practical frameworks for transitioning design roles from drafting pixels to strategic curation, AI-augmented design systems, and rapid prototyping.',
-    url: '#contact',
+      'Practical frameworks for transitioning design leadership from drafting pixels to strategic curation, AI-augmented design systems, and rapid prototyping.',
+    takeaways: [
+      'The commodity layer of UI design (boilerplate grids, baseline icons, style variants) is solved by AI.',
+      'The new frontier for design leaders is taste, ethical governance, and contextual narrative.',
+      'Designers who write code and master prompt architectures move 10x faster than traditional siloed teams.',
+    ],
+    sections: [
+      {
+        heading: 'Beyond the Panic: A Shift in Creative Leverage',
+        paragraphs: [
+          'Whenever a technological paradigm shift emerges, the initial industry reaction swings between existential dread and dismissive skepticism. In UX and product design, generative AI has ignited valid questions: If a machine can generate an entire dashboard layout from a one-sentence prompt, what is the role of the designer?',
+          'The answer lies in understanding where true product value is created. Pixel creation was always just the artifact; strategic synthesis, emotional empathy, and business alignment were always the actual job.',
+        ],
+        quote: '“AI creates components in seconds, but only human judgment understands why a user abandons a checkout flow on a rainy evening.”',
+      },
+      {
+        heading: 'The Rise of the Curator & Systems Architect',
+        paragraphs: [
+          'Historically, junior and senior designers spent 60% of their sprints pushing vectors: aligning auto-layouts, generating hover states, and documenting redlines for engineering handoffs. AI collapses this manual labor to near-zero.',
+          'In this new era, the highest-performing product designers operate as strategic curators. We frame the underlying problem, establish design system token boundaries, and evaluate dozens of AI-generated explorations against real customer psychology.',
+        ],
+        bulletPoints: [
+          'Prompt-assisted exploratory workflows replacing 3-day wireframing phases',
+          'Token-synchronized design systems that update React code in real time',
+          'Hyper-focused user research synthesis and scenario stress-testing',
+        ],
+      },
+      {
+        heading: 'Ethics, Friction, and Taste',
+        paragraphs: [
+          'Algorithms are trained on historical averages. If product teams rely solely on automated outputs, every app will converge into an identical, bland beige average. Distinction requires human taste, deliberate rule-breaking, and cultural resonance.',
+          'Furthermore, as AI interfaces become conversational and agentic, designers must design guardrails against hallucination, dark patterns, and cognitive overload. The modern product leader is a governor of trust.',
+        ],
+      },
+    ],
+    url: '/articles/ai-wont-replace-designers',
   },
   {
     id: 'article-healthcare',
+    slug: 'healthcare-ux-insights',
     tag: 'Healthcare UX',
     readTime: '6 min read',
+    date: 'Nov 2025',
     title: 'Healthcare UX Insights: Designing for Multi-Million Dollar Platforms',
     summary:
-      'Key design decisions that enabled global organizations to manage complex clinical data, reduce error rates, and improve physician efficiency.',
-    url: '#contact',
+      'Key design decisions that enabled global organizations to manage complex clinical data, reduce error rates, and improve physician efficiency under high cognitive loads.',
+    takeaways: [
+      'Clinical environments have zero tolerance for ambiguity; visual hierarchy directly affects safety.',
+      'Designing for extreme cognitive load requires ruthless removal of redundant interface chrome.',
+      'Accessibility and WCAG compliance must be foundational architecture, not an audit afterthought.',
+    ],
+    sections: [
+      {
+        heading: 'The High-Stakes Reality of Clinical Interfaces',
+        paragraphs: [
+          'Designing for enterprise healthcare platforms is a sobering experience compared to consumer SaaS. When a social media app has a confusing dropdown, user engagement dips by 2%. When an Electronic Health Record (EHR) or clinical dashboard obscures vital diagnostic trends, patient outcomes are genuinely at risk.',
+          'Over several years collaborating on enterprise medical software, I learned that good healthcare UX is not about trendy gradients or flashy animations—it is about clarity, accuracy, and cognitive ease under extreme stress.',
+        ],
+        quote: '“In clinical software, every unnecessary click is seconds stolen from a patient’s bedside.”',
+      },
+      {
+        heading: 'Taming the Data Beast: Progressive Disclosure',
+        paragraphs: [
+          'Physicians and clinical specialists are inundated with hundreds of lab values, medication timelines, and diagnostic imaging tags on a single patient. The instinct of legacy enterprise software was to cram every field onto a single 1080p screen.',
+          'We introduced rigorous progressive disclosure models: categorizing real-time telemetry into high-alert summary cards while allowing 1-click drilldowns for longitudinal charts. By prioritizing visual hierarchy over exhaustive density, clinical chart review times dropped by 34%.',
+        ],
+        bulletPoints: [
+          'Contextual alert severity thresholds that prevent alarm fatigue',
+          'Keyboard-first data entry shortcuts for rapid bedside charting',
+          'High-contrast themes calibrated for varied hospital lighting conditions',
+        ],
+      },
+      {
+        heading: 'Enterprise Governance and Stakeholder Alignment',
+        paragraphs: [
+          'Building healthcare systems requires navigating stringent HIPAA, FDA, and WCAG regulatory standards while reconciling the competing demands of chief medical officers, hospital procurement heads, and IT security leads. Success required creating shared design tokens and auditable component libraries that proved compliance at every build phase.',
+        ],
+      },
+    ],
+    url: '/articles/healthcare-ux-insights',
   },
   {
     id: 'article-react-native',
+    slug: 'react-native-design-systems',
     tag: 'Engineering',
     readTime: 'Drafting',
+    date: 'Coming Soon',
     title: 'React Native: Bridge to Production-Ready Design Systems',
     summary:
       'How designers writing React Native code streamlines cross-platform component updates, boosts performance, and decreases developer handoff delay.',
+    takeaways: [
+      'Bridging Figma components and native code eliminates translation errors.',
+      'Cross-platform mobile design systems enforce token consistency across iOS and Android.',
+    ],
+    sections: [
+      {
+        heading: 'Article in Progress',
+        paragraphs: [
+          'This deep-dive architectural essay explores how bridging the gap between Figma design tokens and React Native production components reduces sprint turnaround time from weeks to hours.',
+          'Currently in final editorial review. Sign up or check back soon for the complete walkthrough and open-source code templates.',
+        ],
+      },
+    ],
     isDraft: true,
+    url: '/articles/react-native-design-systems',
   },
 ]
 
