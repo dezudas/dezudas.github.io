@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { createFileRoute, Link, notFound } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { articlesData, personalInfo } from '@/lib/portfolio-data'
+import { SEO } from '@/components/SEO'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
@@ -21,6 +22,12 @@ export const Route = createFileRoute('/articles/$slug')({
       (a) => a.slug === params.slug || a.id === params.slug
     )
     return {
+      links: [
+        {
+          rel: 'canonical',
+          href: `https://dijup.com/articles/${params.slug}`,
+        },
+      ],
       meta: [
         {
           title: article
@@ -37,16 +44,11 @@ export const Route = createFileRoute('/articles/$slug')({
           property: 'og:url',
           content: `https://dijup.com/articles/${params.slug}`,
         },
-        {
-          rel: 'canonical',
-          href: `https://dijup.com/articles/${params.slug}`,
-        },
       ],
     }
   },
   component: ArticleDetailPage,
 })
-
 
 function ArticleDetailPage() {
   const { slug } = Route.useParams()
@@ -57,6 +59,7 @@ function ArticleDetailPage() {
   if (!article) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center px-6 pt-32 pb-20 text-center">
+        <SEO title="Article Not Found" description="The requested article does not exist." noIndex />
         <Badge variant="default" className="mb-4">
           404 Error
         </Badge>
@@ -87,8 +90,68 @@ function ArticleDetailPage() {
   // Related articles (excluding current)
   const relatedArticles = articlesData.filter((a) => a.id !== article.id)
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `https://dijup.com/articles/${article.slug}#article`,
+        headline: article.title,
+        description: article.summary,
+        url: `https://dijup.com/articles/${article.slug}`,
+        datePublished: article.date,
+        articleSection: article.tag,
+        inLanguage: 'en-US',
+        author: {
+          '@type': 'Person',
+          name: personalInfo.name,
+          url: 'https://dijup.com',
+        },
+        publisher: {
+          '@type': 'Person',
+          name: personalInfo.name,
+          url: 'https://dijup.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `https://dijup.com/articles/${article.slug}`,
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://dijup.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Writing',
+            item: 'https://dijup.com/writing',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: article.title,
+            item: `https://dijup.com/articles/${article.slug}`,
+          },
+        ],
+      },
+    ],
+  }
+
   return (
     <article className="w-full pt-32 pb-24 px-6 lg:px-8">
+      <SEO
+        title={article.title}
+        description={article.summary}
+        canonicalUrl={`https://dijup.com/articles/${article.slug}`}
+        ogType="article"
+        structuredData={articleSchema}
+      />
       <div className="max-w-4xl mx-auto">
         {/* Top Navigation & Breadcrumbs */}
         <div className="flex items-center justify-between gap-4 mb-10">
@@ -151,6 +214,10 @@ function ArticleDetailPage() {
             <img
               src={personalInfo.avatarUrl}
               alt={personalInfo.name}
+              width={48}
+              height={48}
+              loading="lazy"
+              decoding="async"
               className="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-white/10 shadow-sm"
             />
             <div>

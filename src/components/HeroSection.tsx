@@ -1,24 +1,45 @@
-import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import * as React from 'react'
+import { ArrowRight } from 'lucide-react'
 import { personalInfo } from '@/lib/portfolio-data'
 import { Button } from '@/components/ui/button'
+import { HeroBackground } from '@/components/hero/HeroBackground'
 
 export function HeroSection() {
+  const [mousePos, setMousePos] = React.useState<{ x: number; y: number } | null>(null)
+
+  const handleMouseMove = React.useCallback((e: React.MouseEvent<HTMLElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    setMousePos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    })
+  }, [])
+
+  const handleMouseLeave = React.useCallback(() => {
+    setMousePos(null)
+  }, [])
+
   return (
     <section
       id="top"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
       className="w-full min-h-[90vh] flex flex-col items-center justify-center px-6 lg:px-8 pt-32 pb-20 relative overflow-hidden"
     >
-      {/* Dynamic ambient background glows */}
-      <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-black/[0.03] dark:bg-white/[0.03] rounded-full blur-[140px] -z-10 pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[420px] h-[420px] bg-black/[0.03] dark:bg-white/[0.03] rounded-full blur-[160px] -z-10 pointer-events-none" />
+      {/* Animated alive background with ambient orbs, dot matrix & micro-particles */}
+      <HeroBackground mousePos={mousePos} />
 
-      <div className="max-w-4xl text-center mx-auto">
+      <div className="max-w-4xl text-center mx-auto relative z-10">
         {/* Avatar badge with halo and wave */}
         <div className="relative inline-block mb-10 group">
           <div className="absolute -inset-1 bg-gradient-to-tr from-[#111111]/20 via-[#111111]/10 to-transparent dark:from-white/20 dark:via-white/10 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-700 animate-spin-slow" />
           <img
             src={personalInfo.avatarUrl}
-            alt={personalInfo.name}
+            alt="Dijup Tuladhar — Product Designer, Builder, Founder"
+            width={144}
+            height={144}
+            fetchPriority="high"
+            decoding="async"
             className="relative rounded-full w-36 h-36 mx-auto object-cover border-4 border-white dark:border-white/10 shadow-xl transition-transform duration-500 group-hover:scale-105"
           />
         </div>

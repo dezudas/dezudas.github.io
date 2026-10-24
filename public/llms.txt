@@ -1,0 +1,37 @@
+# Dijup Tuladhar
+
+> Product Designer, Builder & Founder. 20+ years crafting design systems, AI-enabled products, and agile experiences. Based in Kathmandu, Nepal, working globally.
+
+## Summary
+Dijup Tuladhar is a Senior Principal Product Designer, entrepreneur, and strategic product leader with over two decades of experience bridging design excellence, AI innovation, and agile execution. He is the founder and full-stack builder of Chordpedia, Nepal's flagship music chords and lyrics platform, scaling it organically to over 82,000 users and 400+ active musicians. At Cotiviti and Infinite Computer Solutions, he has spearheaded design systems and UX architecture for multi-million-dollar healthcare analytics platforms.
+
+## Core Expertise
+- **Design-Led Agility**: Integrating Design Sprints with SAFe 5 and Scrum engineering sprints to eliminate waste.
+- **Enterprise Design Systems**: Multi-brand Figma token architectures synchronized with React and React Native codebases.
+- **AI Product Strategy & UX**: Designing agentic workflows, LLM prompt interfaces, and human-in-the-loop AI systems.
+- **Full-Cycle Product Building**: Hands-on architecture with React, TypeScript, React Native, PHP, MySQL, and Web Audio APIs.
+- **Healthcare UX**: Clinical data visualization, HIPAA-compliant interfaces, and progressive disclosure design.
+
+## Ventures & Leadership
+- **Chordpedia** (https://chordpedia.com): Founder & Developer. Bootstrapped Nepal's largest guitar & ukulele chords platform. Facebook FbStart recipient.
+- **Infinite Computer Solutions**: Senior Principal Product Designer (2024–Present), leading global enterprise product design and AI UX workflows.
+- **Cotiviti** (formerly D2Hawkeye / Verscend): Sr. Principal Creative Designer (2008–Present), 16+ years designing clinical intelligence platforms.
+
+## Key Articles & Insights
+- [Building Chordpedia](https://dijup.com/articles/building-chordpedia): Architectural and product lessons from creating Nepal's premier music platform.
+- [AI Won't Replace Designers](https://dijup.com/articles/ai-wont-replace-designers): The transition of design leadership from drafting pixels to strategic AI curation.
+- [Healthcare UX Insights](https://dijup.com/articles/healthcare-ux-insights): Designing high-stakes clinical interfaces under high cognitive load.
+- [React Native Design Systems](https://dijup.com/articles/react-native-design-systems): Bridging design tokens to cross-platform mobile production.
+
+## Speaking & Panels
+- **AI Conf Asia**: "The Shift in Design Leadership" — evolving from pixel-pushers to strategic curators.
+- **Agile Nepal**: "Clash or Collaboration?" — bridging creative Design Sprints with engineering Agile workflows.
+- **Radiant College**: "UI/UX Fundamentals" — human-centered design workshop.
+
+## Links & Profiles
+- Website: https://dijup.com
+- LinkedIn: https://linkedin.com/in/dijup
+- GitHub: https://github.com/dezudas
+- Behance: https://www.behance.net/dijup
+- Chordpedia: https://chordpedia.com
+- Contact: connect@dijup.com

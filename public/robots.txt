@@ -1,4 +1,35 @@
 User-agent: *
 Allow: /
 
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI Crawlers & Assistants (LLM Readability)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Disallow common junk / sensitive paths if any
+Disallow: /api/
+Disallow: /*?*
+
+# Sitemaps & Machine-Readable Context
 Sitemap: https://dijup.com/sitemap.xml

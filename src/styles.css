@@ -167,3 +167,140 @@
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
 }
 
+/* Hero Background Animation System */
+.bg-hero-dots {
+  background-image: radial-gradient(rgba(17, 17, 17, 0.22) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+}
+
+.dark .bg-hero-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px);
+}
+
+@keyframes hero-orb-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(60px, -45px) scale(1.15);
+  }
+  66% {
+    transform: translate(-40px, 40px) scale(0.9);
+  }
+}
+
+@keyframes hero-orb-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-60px, 50px) scale(1.18);
+  }
+  66% {
+    transform: translate(45px, -35px) scale(0.88);
+  }
+}
+
+@keyframes hero-orb-3 {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.22);
+    opacity: 0.95;
+  }
+}
+
+@keyframes hero-grid-breathe {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes hero-float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(10deg);
+  }
+}
+
+@keyframes hero-float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(-12deg);
+  }
+}
+
+@keyframes hero-twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes hero-pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+.animate-hero-orb-1 {
+  animation: hero-orb-1 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-hero-orb-2 {
+  animation: hero-orb-2 24s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-hero-orb-3 {
+  animation: hero-orb-3 16s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-hero-grid-breathe {
+  animation: hero-grid-breathe 10s ease-in-out infinite;
+}
+
+.animate-hero-float-slow {
+  animation: hero-float-slow 12s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-hero-float-reverse {
+  animation: hero-float-reverse 14s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-hero-twinkle {
+  animation: hero-twinkle 6s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+.animate-hero-pulse-ring {
+  animation: hero-pulse-ring 4s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+  will-change: transform, opacity;
+}
+

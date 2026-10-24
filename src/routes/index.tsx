@@ -1,10 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { SEO } from '@/components/SEO'
 import { HeroSection } from '@/components/HeroSection'
-import { MetricsBanner } from '@/components/MetricsBanner'
 import { FocusSection } from '@/components/FocusSection'
 import { ChordpediaSpotlight } from '@/components/ChordpediaSpotlight'
 import { TechStackSection } from '@/components/TechStackSection'
-import { OfferingsSection } from '@/components/OfferingsSection'
 // import { BuildingInPublicSection } from '@/components/BuildingInPublicSection'
 import { SpeakingSection } from '@/components/SpeakingSection'
 import { WritingSection } from '@/components/WritingSection'
@@ -19,6 +18,11 @@ export const Route = createFileRoute('/')({
 function IndexPage() {
   return (
     <>
+      <SEO
+        title="Dijup Tuladhar — Product Designer. Builder. Founder."
+        description="Product Designer. Builder. Founder. 20+ years crafting design systems, AI-enabled products, and agile experiences. Based in Nepal, working globally."
+        canonicalUrl="https://dijup.com/"
+      />
       <HeroSection />
       {/* <MetricsBanner /> */}
       <FocusSection />

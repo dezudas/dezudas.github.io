@@ -8,7 +8,11 @@ export function QuoteSection() {
         <div className="relative mb-12">
           <img
             src="/circular-text.png"
-            alt="Design Vision Emblem"
+            alt="Dijup Tuladhar Design Vision Emblem"
+            width={128}
+            height={128}
+            loading="lazy"
+            decoding="async"
             className="w-32 h-32 animate-spin-slow opacity-20 dark:opacity-30 dark:invert"
           />
           <div className="absolute inset-0 flex items-center justify-center">

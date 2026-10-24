@@ -1,7 +1,6 @@
 import { Check, ArrowRight, Sparkles, ExternalLink } from 'lucide-react'
-import { chordpediaStats, roadmapData } from '@/lib/portfolio-data'
+import { chordpediaStats } from '@/lib/portfolio-data'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 
 export function ChordpediaSpotlight() {
   return (
@@ -24,7 +23,11 @@ export function ChordpediaSpotlight() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent z-10" />
           <img
             src="/cpbanner.png"
-            alt="Chordpedia Platform Showcase"
+            alt="Chordpedia Nepali Music Chords Platform Showcase"
+            width={1200}
+            height={440}
+            loading="lazy"
+            decoding="async"
             className="w-full h-72 sm:h-96 md:h-[440px] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
           />
           <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 z-20 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
