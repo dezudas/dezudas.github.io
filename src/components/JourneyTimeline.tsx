@@ -1,6 +1,5 @@
 import { timelineData, methodologiesData } from '@/lib/portfolio-data'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkles } from 'lucide-react'
 
 export function JourneyTimeline() {
@@ -100,15 +99,13 @@ export function JourneyTimeline() {
               <p className="text-sm text-white/80 leading-relaxed mb-8">
                 Available for high-impact product leadership, AI roadmap strategy, and keynote speaking engagements.
               </p>
-              <Button
-                asChild
-                className="w-full rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold"
+              <a
+                href="#contact"
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold text-sm transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
               >
-                <a href="#contact" className="gap-2">
-                  Book a Consultation
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </Button>
+                Book a Consultation
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>

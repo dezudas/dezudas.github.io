@@ -16,8 +16,37 @@ import {
 } from 'lucide-react'
 
 export const Route = createFileRoute('/articles/$slug')({
+  head: ({ params }) => {
+    const article = articlesData.find(
+      (a) => a.slug === params.slug || a.id === params.slug
+    )
+    return {
+      meta: [
+        {
+          title: article
+            ? `${article.title} \u2014 Dijup Tuladhar`
+            : 'Article \u2014 Dijup Tuladhar',
+        },
+        { name: 'description', content: article?.summary ?? '' },
+        {
+          property: 'og:title',
+          content: article ? `${article.title} \u2014 Dijup Tuladhar` : 'Article',
+        },
+        { property: 'og:description', content: article?.summary ?? '' },
+        {
+          property: 'og:url',
+          content: `https://dijup.com/articles/${params.slug}`,
+        },
+        {
+          rel: 'canonical',
+          href: `https://dijup.com/articles/${params.slug}`,
+        },
+      ],
+    }
+  },
   component: ArticleDetailPage,
 })
+
 
 function ArticleDetailPage() {
   const { slug } = Route.useParams()
@@ -230,15 +259,13 @@ function ArticleDetailPage() {
                 I partner with founders and growth teams on design-led agility, AI roadmap execution, and product architecture.
               </p>
             </div>
-            <Button
-              asChild
-              className="rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold shrink-0"
+            <a
+              href="/#contact"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold text-sm transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer shrink-0"
             >
-              <a href="/#contact" className="gap-2">
-                Let's Talk
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </Button>
+              Let's Talk
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
 

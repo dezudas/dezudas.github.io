@@ -5,6 +5,12 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 
 export const Route = createFileRoute('/initiatives')({
+  head: () => ({
+    meta: [
+      { title: 'Initiatives & Ventures — Dijup Tuladhar' },
+      { name: 'description', content: 'Chordpedia and other ventures by Dijup Tuladhar — Product Designer, Builder & Founder.' },
+    ],
+  }),
   component: InitiativesPage,
 })
 

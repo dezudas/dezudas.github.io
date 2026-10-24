@@ -55,7 +55,7 @@ export function ContactSection() {
                 type="text"
                 name="name"
                 required
-                placeholder="Jane Doe"
+                placeholder="Name"
                 className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-[#111111] dark:focus:ring-white text-sm font-medium transition-all text-[#111111] dark:text-white placeholder:text-gray-400"
               />
             </div>
@@ -68,7 +68,7 @@ export function ContactSection() {
                 type="email"
                 name="email"
                 required
-                placeholder="jane@example.com"
+                placeholder="email@example.com"
                 className="w-full px-6 py-3.5 rounded-2xl bg-white dark:bg-white/5 border border-borderColor dark:border-white/10 outline-none focus:ring-2 focus:ring-[#111111] dark:focus:ring-white text-sm font-medium transition-all text-[#111111] dark:text-white placeholder:text-gray-400"
               />
             </div>

@@ -428,71 +428,87 @@ export const articlesData: Article[] = [
 
 export const timelineData: TimelineEvent[] = [
   {
-    yearOrEra: 'Active Focus',
-    title: "Building Nepal's Music Platform",
-    companyOrRole: 'Chordpedia Ecosystem',
+    yearOrEra: '2024 – Present',
+    title: 'Senior Principal Product Designer',
+    companyOrRole: 'Infinite Computer Solutions',
     description:
-      'Actively scaling Chordpedia Premium subscriptions, AI practice tools, music events, and artist distribution infrastructure.',
+      'Leading enterprise product design strategy, AI-assisted UX workflows, design systems, and multi-disciplinary global delivery for large-scale enterprise digital solutions.',
     isActiveFocus: true,
   },
   {
-    yearOrEra: '2026',
-    title: 'AI Conf Keynote Speaker',
-    companyOrRole: 'AI Conf 2026',
+    yearOrEra: '2025',
+    title: 'UI/UX Fundamentals - Workshop',
+    companyOrRole: 'Radiant College',
     description:
-      'Presented "The Shift in Design Leadership" on adapting design workflows and leadership structures for AI-native software.',
-    highlight: true,
+      'A comprehensive workshop on UI/UX fundamentals covering human-centered principles and essential steps in the design process.',
   },
   {
-    yearOrEra: 'Founder Era',
-    title: 'Founder & Product Lead',
+    yearOrEra: '2025',
+    title: 'Clash or Collaboration',
+    companyOrRole: 'Scrum Alliance & Scaled Agile',
+    description:
+      'Bridging the gap between creative Design Sprints and engineering-heavy Agile workflows to build an aligned, waste-free development culture.',
+  },
+  {
+    yearOrEra: '2024',
+    title: 'AI Is Redefining Design Leadership: From Execution to Strategic Decision-Making',
+    companyOrRole: 'AI Conf Asia & Atlassian Community',
+    description:
+      'Delivered "AI Is Redefining Design Leadership" at AI Conf Asia on shifting design roles from hands-on execution toward strategic AI leadership, agentic workflows, and decision-making.',
+    highlight: true,
+  },
+    {
+    yearOrEra: '2014 – Present',
+    title: 'Founder, Developer & Designer',
     companyOrRole: 'Chordpedia',
     description:
-      "Launched Chordpedia from zero users, acting as both Full-Stack Developer and Product Designer to build Nepal's leading music library.",
+      "Founded and architected Nepal's largest guitar & ukulele chords platform, growing it from zero to 82k+ users across web, iOS, and Android. Recipient of Facebook's FbStart program.",
     highlight: true,
-  },
-  {
-    yearOrEra: 'Design Leadership',
-    title: 'Sr. Principal Product Designer',
-    companyOrRole: 'Infinite',
-    description:
-      'Leading creative direction and UI/UX strategy for complex, enterprise-level digital solutions across global markets. Established design tokens and automated handoffs.',
-  },
-  {
-    yearOrEra: 'Healthcare Platforms',
-    title: 'Enterprise Scalability & Product Design',
-    companyOrRole: 'Cotiviti, D2hawkeye, wServe, EBPearls',
-    description:
-      "Led UI/UX and product strategy for multi-million dollar clinical healthcare and insurance platforms with rigorous compliance standards.",
   },
   {
     yearOrEra: '2011',
-    title: 'Scrum Master Certification',
-    companyOrRole: 'Agile Transition',
+    title: 'Agile Transition & SAFe Practitioner',
+    companyOrRole: 'Scrum Alliance & Scaled Agile',
     description:
-      'Recognized the urgent need to align creative design velocity with software engineering delivery, becoming a certified Scrum Master.',
+      'Certified Scrum Master and SAFe 5 Agilist, aligning creative design velocity with enterprise software engineering delivery through iterative sprints and design-led agility.',
+  },
+  
+    {
+    yearOrEra: '2008 – Present',
+    title: 'Sr. Principal Creative Designer',
+    companyOrRole: 'Cotiviti (formerly D2Hawkeye / Verscend)',
+    description:
+      'Over 16 years leading UX/UI design across multi-million dollar healthcare analytics and clinical intelligence platforms. Advanced from Creative Designer to Principal & Sr. Principal, implementing HIPAA-compliant design systems and enterprise agility.',
+    highlight: true,
   },
   {
-    yearOrEra: '2005',
-    title: 'Pioneering Digital Design',
-    companyOrRole: 'Early Web & Interactive',
+    yearOrEra: '2005 – 2008',
+    title: 'Group Leader (Assistant Manager)',
+    companyOrRole: 'ServingMinds Pvt. Ltd.',
     description:
-      'Pioneered early digital web experiences in Nepal, bridging graphics, typography, and interactive coding.',
+      'Advanced through four roles from Web Designer to Team Leader and Group Leader, directing UI integration, dynamic web applications, and CMS architectures.',
+  },
+  {
+    yearOrEra: '2005 – 2007',
+    title: 'Senior Web Designer',
+    companyOrRole: 'ebPearls Pty Ltd',
+    description:
+      'Pioneered early digital web standards in Nepal, crafting cross-browser web interfaces, standards-compliant CSS/HTML, and interactive user experiences for global clients.',
   },
 ]
 
 export const methodologiesData: MethodologyGroup[] = [
   {
-    category: 'Methodologies',
-    skills: 'Agile, Scrum, Design Sprints, Lean UX, Information Architecture (IA)',
+    category: 'Methodologies & Agile',
+    skills: 'Agile, Scrum, SAFe 5, Design Sprints, Lean UX, Information Architecture',
   },
   {
-    category: 'Design Systems',
-    skills: 'UI/UX, Figma, Design Tokens, Governance, Component Libraries',
+    category: 'Design Systems & UX',
+    skills: 'Figma, Design Tokens, Governance, Component Libraries, Healthcare UX',
   },
   {
-    category: 'Future-Tech',
-    skills: 'AI-Assisted Design, Github Copilot, Prompt Engineering, LLM UX',
+    category: 'AI & Future-Tech',
+    skills: 'AI UX, Prompt Engineering, Agentic Workflows, LLM Interfaces, Copilot',
   },
 ]
 

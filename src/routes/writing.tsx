@@ -5,6 +5,12 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 
 export const Route = createFileRoute('/writing')({
+  head: () => ({
+    meta: [
+      { title: 'Writing & Insights — Dijup Tuladhar' },
+      { name: 'description', content: 'Essays, frameworks, and insights on Product Design, AI, and Agile Strategy by Dijup Tuladhar.' },
+    ],
+  }),
   component: WritingPage,
 })
 

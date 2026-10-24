@@ -36,17 +36,15 @@ export function ChordpediaSpotlight() {
                 Nepal&apos;s Ultimate Hub for Artist
               </h3>
             </div>
-            <Button asChild className="rounded-full bg-white text-[#111111] hover:bg-gray-100 shrink-0 font-bold">
-              <a
-                href="https://www.chordpedia.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gap-2 font-bold"
-              >
-                Visit Chordpedia.com
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </Button>
+            <a
+              href="https://www.chordpedia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold text-sm transition-colors shrink-0 shadow-sm"
+            >
+              Visit Chordpedia.com
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </div>
 
@@ -105,17 +103,15 @@ export function ChordpediaSpotlight() {
             </div>
 
             <div className="pt-2">
-              <Button asChild size="lg" className="rounded-full shadow-lg bg-white text-[#111111] hover:bg-gray-100 font-bold">
-                <a
-                  href="https://www.chordpedia.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="gap-2"
-                >
-                  Explore Chordpedia Live
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </Button>
+              <a
+                href="https://www.chordpedia.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-[#111111] hover:bg-gray-100 font-bold text-base transition-colors shadow-lg"
+              >
+                Explore Chordpedia Live
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
