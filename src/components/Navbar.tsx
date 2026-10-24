@@ -15,7 +15,6 @@ const navItems = [
   { label: 'Home', href: '/#top' },
   { label: 'Focus', href: '/#about' },
   { label: 'Initiatives', href: '/#work' },
-  { label: 'Offerings', href: '/#offerings' },
   { label: 'Speaking', href: '/#speaking' },
   { label: 'Journey', href: '/#journey' },
 ]
@@ -94,15 +93,7 @@ export function Navbar() {
             )}
           </button>
 
-          {/* Chordpedia Quick Link */}
-          <a
-            href="https://chordpedia.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#111111]/25 text-[#111111] hover:bg-[#111111] hover:text-white dark:border-white/30 dark:text-white dark:hover:bg-white dark:hover:text-[#111111] transition-all text-xs font-bold uppercase tracking-wider active:scale-95"
-          >
-            Chordpedia ⚡
-          </a>
+
 
           {/* Let's Talk CTA */}
           <Button
@@ -145,15 +136,7 @@ export function Navbar() {
                       {item.label}
                     </a>
                   ))}
-                  <a
-                    href="https://chordpedia.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between text-base font-bold text-[#111111] dark:text-white hover:text-[#737373] py-2 mt-2"
-                  >
-                    <span>Chordpedia.com</span>
-                    <ArrowUpRight className="w-4 h-4" />
-                  </a>
+
                 </div>
               </div>
 

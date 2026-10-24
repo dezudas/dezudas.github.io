@@ -21,9 +21,6 @@ export function HeroSection() {
             alt={personalInfo.name}
             className="relative rounded-full w-36 h-36 mx-auto object-cover border-4 border-white dark:border-white/10 shadow-xl transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="absolute -bottom-1 -right-1 bg-white dark:bg-[#1A1A1A] p-2.5 rounded-full border border-borderColor dark:border-white/10 shadow-lg">
-            <img src="/hand-icon.png" alt="Waving hand" className="w-6 h-6 animate-bounce" />
-          </div>
         </div>
 
         {/* Subtitle */}
@@ -33,9 +30,9 @@ export function HeroSection() {
 
         {/* Big Impact Headline */}
         <h1 className="text-4xl sm:text-6xl lg:text-[76px] font-black leading-[1.08] tracking-tight text-[#111111] dark:text-white mb-6">
-          Leading{' '}
+          Product Designer.{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#111111] via-[#2d2d2d] to-[#555555] dark:from-white dark:via-gray-200 dark:to-gray-400">
-            Design, AI & Agile Strategy.
+            Builder. Founder. AI &amp; Agile Strategy.
           </span>
         </h1>
 
@@ -54,28 +51,12 @@ export function HeroSection() {
         {/* Primary Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
           <Button asChild size="lg" className="w-full sm:w-auto shadow-lg">
-            <a href="#offerings" className="gap-2.5">
+            <a href="#contact" className="gap-2.5">
               Work With Me
               <ArrowRight className="w-4 h-4" />
             </a>
           </Button>
 
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="w-full sm:w-auto hover:border-[#111111] dark:hover:border-white"
-          >
-            <a
-              href="https://chordpedia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2.5 group"
-            >
-              Explore Chordpedia
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
-          </Button>
         </div>
       </div>
     </section>

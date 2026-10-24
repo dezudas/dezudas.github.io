@@ -7,7 +7,7 @@ export default tsPlugin.config(
     ignores: [
       'dist/**',
       'public/**',
-      'assets/**',
+      'src/assets/**',
       'scripts/**',
       '*.legacy.html',
       '*.html',

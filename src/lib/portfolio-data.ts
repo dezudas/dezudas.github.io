@@ -16,7 +16,7 @@ import type {
 export const personalInfo = {
   name: 'Dijup Tuladhar',
   title: 'Strategic Product Leader, Builder & Founder',
-  tagline: '##Leading Design, AI & Agile Strategy',
+  tagline: 'Product Designer. Builder. Founder. AI & Agile Strategy.',
   subTagline: 'Product Designer. Builder. Founder.',
   bio: "I'm building the future of music technology in Nepal while helping organizations build better digital products. 20+ years of crafting digital experiences, scaling design systems, and pioneering Design-Led Agility for global products.",
   shortBio:
