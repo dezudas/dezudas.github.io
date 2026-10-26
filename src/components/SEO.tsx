@@ -11,9 +11,9 @@ export interface SEOProps {
   noIndex?: boolean
 }
 
-const DEFAULT_TITLE = 'Dijup Tuladhar — Product Designer. Builder. Founder.'
+const DEFAULT_TITLE = 'Dijup Tuladhar — Product Designer, AI UX Strategist & Fractional Design Leader'
 const DEFAULT_DESCRIPTION =
-  'Product Designer. Builder. Founder. 20+ years crafting design systems, AI-enabled products, and agile experiences. Based in Nepal, working globally.'
+  'Dijup Tuladhar — Senior Product Designer & Fractional Design Leader in Nepal with 20+ years crafting AI UX, design systems, and healthcare analytics platforms. Founder of Chordpedia. Working globally.'
 const DEFAULT_IMAGE = 'https://dijup.com/dijup_clean.png'
 const DEFAULT_URL = 'https://dijup.com/'
 
@@ -81,10 +81,14 @@ export function SEO({
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content={ogImageAlt} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:site_name" content="Dijup Tuladhar Portfolio" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@dijup" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:url" content={canonicalUrl} />

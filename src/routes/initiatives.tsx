@@ -8,11 +8,11 @@ import { ArrowLeft } from 'lucide-react'
 export const Route = createFileRoute('/initiatives')({
   head: () => ({
     meta: [
-      { title: 'Initiatives & Ventures — Dijup Tuladhar' },
+      { title: 'Chordpedia Founder & Digital Ventures — Dijup Tuladhar, Nepal' },
       {
         name: 'description',
         content:
-          'Chordpedia, AI music tools, and digital ventures founded and architected by Dijup Tuladhar — Product Designer, Builder & Founder.',
+          'Dijup Tuladhar — founder of Chordpedia, Nepal\'s largest guitar chords and music platform with 82,000+ users. AI music tools, bootstrapped ventures, and digital product building from Kathmandu.',
       },
     ],
   }),
@@ -42,8 +42,8 @@ function InitiativesPage() {
   return (
     <div className="pt-28 pb-16">
       <SEO
-        title="Initiatives & Ventures — Dijup Tuladhar"
-        description="Chordpedia, AI music tools, and digital ventures founded and architected by Dijup Tuladhar — Product Designer, Builder & Founder."
+        title="Chordpedia Founder & Digital Ventures — Dijup Tuladhar, Nepal"
+        description="Dijup Tuladhar — founder of Chordpedia, Nepal's largest guitar chords and music platform with 82,000+ users. AI music tools, bootstrapped ventures, and digital product building from Kathmandu."
         canonicalUrl="https://dijup.com/initiatives"
         structuredData={breadcrumbSchema}
       />

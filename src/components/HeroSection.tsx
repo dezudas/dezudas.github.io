@@ -46,27 +46,27 @@ export function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl font-medium text-[#737373] dark:text-gray-400 mb-3 tracking-wide">
-          Hello! I&apos;m Dijup Tuladhar
+          Hello! I&apos;m Dijup Tuladhar — Product Designer &amp; AI UX Strategist, Kathmandu, Nepal
         </p>
 
         {/* Big Impact Headline */}
         <h1 className="text-4xl sm:text-6xl lg:text-[76px] font-black leading-[1.08] tracking-tight text-[#111111] dark:text-white mb-6">
           Product Designer.{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#111111] via-[#2d2d2d] to-[#555555] dark:from-white dark:via-gray-200 dark:to-gray-400">
-            Builder. Founder. AI &amp; Agile Strategy.
+            AI UX Strategist. Fractional Design Leader.
           </span>
         </h1>
 
         {/* Description with high-visibility link */}
         <p className="max-w-3xl mx-auto text-lg sm:text-2xl text-[#737373] dark:text-gray-300 leading-relaxed font-normal mb-10">
-          20+ years of crafting digital experiences, scaling design systems, and pioneering{' '}
+          20+ years crafting AI-enabled products, design systems, and healthcare UX for global enterprises. Pioneering{' '}
           <a
             href="#about"
             className="text-[#111111] dark:text-white font-bold underline decoration-[#111111]/40 dark:decoration-white/40 underline-offset-8 hover:opacity-80 transition-opacity"
           >
             Design-Led Agility
           </a>{' '}
-          for global products and founding Nepal&apos;s leading music platform.
+          and founding Nepal&apos;s leading music platform, Chordpedia.
         </p>
 
         {/* Primary Action Buttons */}

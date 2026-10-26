@@ -27,9 +27,9 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Disallow common junk / sensitive paths if any
+# Disallow internal API endpoints only
+# Note: URL params (UTM, ref, etc.) are handled via canonical tags — not blocked here
 Disallow: /api/
-Disallow: /*?*
 
 # Sitemaps & Machine-Readable Context
 Sitemap: https://dijup.com/sitemap.xml

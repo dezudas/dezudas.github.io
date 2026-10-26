@@ -8,11 +8,11 @@ import { ArrowLeft } from 'lucide-react'
 export const Route = createFileRoute('/speaking')({
   head: () => ({
     meta: [
-      { title: 'Speaking & Governance — Dijup Tuladhar' },
+      { title: 'Product Design Speaker & AI Leadership Keynotes — Dijup Tuladhar' },
       {
         name: 'description',
         content:
-          'Keynotes, agile governance panels, and design leadership workshops by Dijup Tuladhar on Product Design, AI Strategy, and Agile Systems.',
+          'Dijup Tuladhar — product design speaker and AI design leadership keynote speaker. Talks on design-led agility, AI UX strategy, and SAFe agile design at AI Conf Asia, Agile Nepal, and global events.',
       },
     ],
   }),
@@ -42,8 +42,8 @@ function SpeakingPage() {
   return (
     <div className="pt-28 pb-16">
       <SEO
-        title="Speaking & Governance — Dijup Tuladhar"
-        description="Keynotes, agile governance panels, and design leadership workshops by Dijup Tuladhar on Product Design, AI Strategy, and Agile Systems."
+        title="Product Design Speaker & AI Leadership Keynotes — Dijup Tuladhar"
+        description="Dijup Tuladhar — product design speaker and AI design leadership keynote speaker. Talks on design-led agility, AI UX strategy, and SAFe agile design at AI Conf Asia, Agile Nepal, and global events."
         canonicalUrl="https://dijup.com/speaking"
         structuredData={breadcrumbSchema}
       />

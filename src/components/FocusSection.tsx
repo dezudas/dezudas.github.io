@@ -18,10 +18,10 @@ export function FocusSection() {
             Strategic Expertise
           </Badge>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#111111] dark:text-white mb-4">
-            What I Build & Lead
+            AI UX, Design Systems & Healthcare UX
           </h2>
           <p className="text-base md:text-xl text-[#737373] dark:text-gray-400 max-w-2xl mx-auto">
-            Delivering strategic value across global enterprise solutions, venture building, and generative AI systems.
+            Fractional design leadership across AI product strategy, enterprise design systems, generative AI UX, and clinical healthcare platforms — globally.
           </p>
         </div>
 

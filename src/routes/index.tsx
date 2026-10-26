@@ -19,8 +19,8 @@ function IndexPage() {
   return (
     <>
       <SEO
-        title="Dijup Tuladhar — Product Designer. Builder. Founder."
-        description="Product Designer. Builder. Founder. 20+ years crafting design systems, AI-enabled products, and agile experiences. Based in Nepal, working globally."
+        title="Dijup Tuladhar — Product Designer, AI UX Strategist & Fractional Design Leader"
+        description="Dijup Tuladhar — Senior Product Designer & Fractional Design Leader in Nepal with 20+ years crafting AI UX, design systems, and healthcare analytics platforms. Founder of Chordpedia. Working globally."
         canonicalUrl="https://dijup.com/"
       />
       <HeroSection />

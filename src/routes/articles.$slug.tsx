@@ -90,6 +90,11 @@ function ArticleDetailPage() {
   // Related articles (excluding current)
   const relatedArticles = articlesData.filter((a) => a.id !== article.id)
 
+  const articleWordCount = article.sections?.reduce(
+    (acc, s) => acc + s.paragraphs.join(' ').split(/\s+/).length,
+    0,
+  ) ?? 0
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -100,8 +105,16 @@ function ArticleDetailPage() {
         description: article.summary,
         url: `https://dijup.com/articles/${article.slug}`,
         datePublished: article.date,
+        dateModified: article.updatedAt ?? article.date,
+        wordCount: articleWordCount || undefined,
         articleSection: article.tag,
         inLanguage: 'en-US',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://dijup.com/dijup_clean.png',
+          width: 1200,
+          height: 630,
+        },
         author: {
           '@type': 'Person',
           name: personalInfo.name,

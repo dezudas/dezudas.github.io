@@ -39,63 +39,63 @@ if (!fs.existsSync(cnamePath)) {
 const staticRoutes = [
   {
     path: 'initiatives',
-    title: 'Initiatives & Ventures — Dijup Tuladhar',
+    title: 'Chordpedia Founder & Digital Ventures — Dijup Tuladhar, Nepal',
     description:
-      'Chordpedia, AI music tools, and digital ventures founded and architected by Dijup Tuladhar — Product Designer, Builder & Founder.',
+      "Dijup Tuladhar — founder of Chordpedia, Nepal's largest guitar chords and music platform with 82,000+ users. AI music tools, bootstrapped ventures, and digital product building from Kathmandu.",
     url: 'https://dijup.com/initiatives',
   },
   {
     path: 'speaking',
-    title: 'Speaking & Governance — Dijup Tuladhar',
+    title: 'Product Design Speaker & AI Leadership Keynotes — Dijup Tuladhar',
     description:
-      'Keynotes, agile governance panels, and design leadership workshops by Dijup Tuladhar on Product Design, AI Strategy, and Agile Systems.',
+      'Dijup Tuladhar — product design speaker and AI design leadership keynote speaker. Talks on design-led agility, AI UX strategy, and SAFe agile design at AI Conf Asia, Agile Nepal, and global events.',
     url: 'https://dijup.com/speaking',
   },
   {
     path: 'writing',
-    title: 'Writing & Insights — Dijup Tuladhar',
+    title: 'Writing & Insights on AI UX, Design Systems & Agile — Dijup Tuladhar',
     description:
-      'Essays, design frameworks, and strategic insights on Product Design, Generative AI UX, and Agile Architecture by Dijup Tuladhar.',
+      'Essays and strategic insights on AI UX design, generative AI product design, design-led agility, healthcare UX, and design systems by Dijup Tuladhar — Product Designer, Nepal.',
     url: 'https://dijup.com/writing',
   },
   {
     path: 'offerings',
-    title: 'Advisory & Offerings — Dijup Tuladhar',
+    title: 'Hire a Fractional Product Design Leader & AI UX Consultant — Dijup Tuladhar',
     description:
-      'Fractional product design leadership, AI product strategy consulting, and rapid discovery sprints by Dijup Tuladhar.',
+      'Hire Dijup Tuladhar as a fractional product design leader or AI product strategy consultant. Design systems architecture, AI UX strategy, and rapid discovery sprints for startups and enterprise teams.',
     url: 'https://dijup.com/offerings',
   },
   {
     path: 'articles',
-    title: 'Articles & Essays — Dijup Tuladhar',
+    title: 'Articles on AI UX, Healthcare UX & Design-Led Agility — Dijup Tuladhar',
     description:
-      'Deep-dive articles and essays on Product Design, AI Strategy, and Agile Systems by Dijup Tuladhar.',
+      'Deep-dive articles on AI UX design, generative AI product design, healthcare UX, design-led agility, and design systems by Dijup Tuladhar — Product Designer, Nepal.',
     url: 'https://dijup.com/articles',
   },
   {
     path: 'articles/building-chordpedia',
-    title: "Building Chordpedia: Lessons from creating Nepal's music platform — Dijup Tuladhar",
+    title: "Building Chordpedia: Lessons from Creating Nepal's Music Platform — Dijup Tuladhar",
     description:
       'How we grew from zero users to hundreds of active musicians and thousands of learners by optimizing for low-latency searches, crowd-sourced verification, and community-first product architecture.',
     url: 'https://dijup.com/articles/building-chordpedia',
   },
   {
     path: 'articles/ai-wont-replace-designers',
-    title: "AI won't replace designers—but it will change how we work — Dijup Tuladhar",
+    title: "AI Won't Replace Designers — Generative AI UX & Design Leadership — Dijup Tuladhar",
     description:
-      'Practical frameworks for transitioning design leadership from drafting pixels to strategic curation, AI-augmented design systems, and rapid prototyping.',
+      'Practical frameworks for transitioning design leadership from drafting pixels to strategic curation, AI-augmented design systems, and generative AI product design.',
     url: 'https://dijup.com/articles/ai-wont-replace-designers',
   },
   {
     path: 'articles/healthcare-ux-insights',
-    title: 'Healthcare UX Insights: Designing for Multi-Million Dollar Platforms — Dijup Tuladhar',
+    title: 'Healthcare UX Insights: Clinical Interface Design for Enterprise Platforms — Dijup Tuladhar',
     description:
-      'Key design decisions that enabled global organizations to manage complex clinical data, reduce error rates, and improve physician efficiency under high cognitive loads.',
+      'Key design decisions for HIPAA-compliant clinical interfaces, healthcare analytics platforms, and high-cognitive-load UX that improve physician efficiency and reduce error rates.',
     url: 'https://dijup.com/articles/healthcare-ux-insights',
   },
   {
     path: 'articles/react-native-design-systems',
-    title: 'React Native: Bridge to Production-Ready Design Systems — Dijup Tuladhar',
+    title: 'React Native Design Systems: Bridging Figma Tokens to Production — Dijup Tuladhar',
     description:
       'How designers writing React Native code streamlines cross-platform component updates, boosts performance, and decreases developer handoff delay.',
     url: 'https://dijup.com/articles/react-native-design-systems',

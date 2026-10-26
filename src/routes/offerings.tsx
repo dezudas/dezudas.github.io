@@ -8,11 +8,11 @@ import { ArrowLeft } from 'lucide-react'
 export const Route = createFileRoute('/offerings')({
   head: () => ({
     meta: [
-      { title: 'Advisory & Offerings — Dijup Tuladhar' },
+      { title: 'Hire a Fractional Product Design Leader & AI UX Consultant — Dijup Tuladhar' },
       {
         name: 'description',
         content:
-          'Fractional product design leadership, AI product strategy consulting, and rapid discovery sprints by Dijup Tuladhar.',
+          'Hire Dijup Tuladhar as a fractional product design leader or AI product strategy consultant. Design systems architecture, AI UX strategy, and rapid discovery sprints for startups and enterprise teams.',
       },
     ],
   }),
@@ -42,8 +42,8 @@ function OfferingsPage() {
   return (
     <div className="pt-28 pb-16">
       <SEO
-        title="Advisory & Offerings — Dijup Tuladhar"
-        description="Fractional product design leadership, AI product strategy consulting, and rapid discovery sprints by Dijup Tuladhar."
+        title="Hire a Fractional Product Design Leader & AI UX Consultant — Dijup Tuladhar"
+        description="Hire Dijup Tuladhar as a fractional product design leader or AI product strategy consultant. Design systems architecture, AI UX strategy, and rapid discovery sprints for startups and enterprise teams."
         canonicalUrl="https://dijup.com/offerings"
         structuredData={breadcrumbSchema}
       />

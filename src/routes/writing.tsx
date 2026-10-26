@@ -8,11 +8,11 @@ import { ArrowLeft } from 'lucide-react'
 export const Route = createFileRoute('/writing')({
   head: () => ({
     meta: [
-      { title: 'Writing & Insights — Dijup Tuladhar' },
+      { title: 'Writing & Insights on AI UX, Design Systems & Agile — Dijup Tuladhar' },
       {
         name: 'description',
         content:
-          'Essays, design frameworks, and strategic insights on Product Design, Generative AI UX, and Agile Architecture by Dijup Tuladhar.',
+          'Essays and strategic insights on AI UX design, generative AI product design, design-led agility, healthcare UX, and design systems by Dijup Tuladhar — Product Designer, Nepal.',
       },
     ],
   }),
@@ -42,8 +42,8 @@ function WritingPage() {
   return (
     <div className="pt-28 pb-16">
       <SEO
-        title="Writing & Insights — Dijup Tuladhar"
-        description="Essays, design frameworks, and strategic insights on Product Design, Generative AI UX, and Agile Architecture by Dijup Tuladhar."
+        title="Writing & Insights on AI UX, Design Systems & Agile — Dijup Tuladhar"
+        description="Essays and strategic insights on AI UX design, generative AI product design, design-led agility, healthcare UX, and design systems by Dijup Tuladhar — Product Designer, Nepal."
         canonicalUrl="https://dijup.com/writing"
         structuredData={breadcrumbSchema}
       />

@@ -1,32 +1,41 @@
 # Dijup Tuladhar
 
-> Product Designer, Builder & Founder. 20+ years crafting design systems, AI-enabled products, and agile experiences. Based in Kathmandu, Nepal, working globally.
+> Senior Product Designer, AI UX Strategist & Fractional Design Leader. 20+ years crafting AI-enabled products, design systems, healthcare UX, and design-led agility frameworks. Based in Kathmandu, Nepal, working globally. Founder of Chordpedia, Nepal's largest guitar chords and music platform.
 
 ## Summary
-Dijup Tuladhar is a Senior Principal Product Designer, entrepreneur, and strategic product leader with over two decades of experience bridging design excellence, AI innovation, and agile execution. He is the founder and full-stack builder of Chordpedia, Nepal's flagship music chords and lyrics platform, scaling it organically to over 82,000 users and 400+ active musicians. At Cotiviti and Infinite Computer Solutions, he has spearheaded design systems and UX architecture for multi-million-dollar healthcare analytics platforms.
+Dijup Tuladhar is a Senior Principal Product Designer, AI UX strategist, fractional design leader, and entrepreneur with over two decades of experience bridging design excellence, AI product strategy, and agile execution. He is the founder and full-stack builder of Chordpedia, Nepal's flagship music chords and lyrics platform, scaling it organically to over 82,000 users and 400+ active musicians. At Cotiviti and Infinite Computer Solutions, he has spearheaded design systems and UX architecture for multi-million-dollar healthcare analytics and clinical intelligence platforms.
 
 ## Core Expertise
-- **Design-Led Agility**: Integrating Design Sprints with SAFe 5 and Scrum engineering sprints to eliminate waste.
-- **Enterprise Design Systems**: Multi-brand Figma token architectures synchronized with React and React Native codebases.
-- **AI Product Strategy & UX**: Designing agentic workflows, LLM prompt interfaces, and human-in-the-loop AI systems.
+- **AI UX Design**: Designing agentic workflows, LLM prompt interfaces, generative AI product design, and human-in-the-loop AI systems.
+- **Fractional Product Design Leadership**: Embedded fractional design leader for startups and enterprise teams — design systems architecture, AI UX strategy, and rapid discovery sprints.
+- **Design-Led Agility**: Integrating Design Sprints with SAFe 5 and Scrum engineering sprints to eliminate waste and accelerate product-market fit.
+- **Enterprise Design Systems**: Multi-brand Figma token architectures synchronized with React and React Native codebases. Figma design system architect.
+- **Healthcare UX & Clinical Interface Design**: HIPAA-compliant interfaces, clinical data visualization, EHR UX design, and progressive disclosure for high-cognitive-load environments.
 - **Full-Cycle Product Building**: Hands-on architecture with React, TypeScript, React Native, PHP, MySQL, and Web Audio APIs.
-- **Healthcare UX**: Clinical data visualization, HIPAA-compliant interfaces, and progressive disclosure design.
+- **Product Designer Nepal / Kathmandu**: Based in Kathmandu, Nepal — available globally for remote fractional design leadership and AI product consulting.
 
 ## Ventures & Leadership
-- **Chordpedia** (https://chordpedia.com): Founder & Developer. Bootstrapped Nepal's largest guitar & ukulele chords platform. Facebook FbStart recipient.
+- **Chordpedia** (https://chordpedia.com): Founder & Developer. Bootstrapped Nepal's largest guitar & ukulele chords platform. 82,000+ users. Facebook FbStart recipient. Nepal music platform founder.
 - **Infinite Computer Solutions**: Senior Principal Product Designer (2024–Present), leading global enterprise product design and AI UX workflows.
-- **Cotiviti** (formerly D2Hawkeye / Verscend): Sr. Principal Creative Designer (2008–Present), 16+ years designing clinical intelligence platforms.
+- **Cotiviti** (formerly D2Hawkeye / Verscend): Sr. Principal Creative Designer (2008–Present), 16+ years designing clinical intelligence and healthcare analytics platforms.
 
 ## Key Articles & Insights
 - [Building Chordpedia](https://dijup.com/articles/building-chordpedia): Architectural and product lessons from creating Nepal's premier music platform.
-- [AI Won't Replace Designers](https://dijup.com/articles/ai-wont-replace-designers): The transition of design leadership from drafting pixels to strategic AI curation.
-- [Healthcare UX Insights](https://dijup.com/articles/healthcare-ux-insights): Designing high-stakes clinical interfaces under high cognitive load.
+- [AI Won't Replace Designers](https://dijup.com/articles/ai-wont-replace-designers): The transition of design leadership from drafting pixels to strategic AI curation — generative AI product design.
+- [Healthcare UX Insights](https://dijup.com/articles/healthcare-ux-insights): Designing high-stakes clinical interfaces under high cognitive load. HIPAA-compliant UX, EHR design.
 - [React Native Design Systems](https://dijup.com/articles/react-native-design-systems): Bridging design tokens to cross-platform mobile production.
 
 ## Speaking & Panels
-- **AI Conf Asia**: "The Shift in Design Leadership" — evolving from pixel-pushers to strategic curators.
-- **Agile Nepal**: "Clash or Collaboration?" — bridging creative Design Sprints with engineering Agile workflows.
-- **Radiant College**: "UI/UX Fundamentals" — human-centered design workshop.
+- **AI Conf Asia**: "The Shift in Design Leadership" — AI design leadership keynote on evolving from pixel-pushers to strategic curators.
+- **Agile Nepal**: "Clash or Collaboration?" — design-led agility, SAFe agile UX, bridging creative Design Sprints with engineering Agile workflows.
+- **Radiant College**: "UI/UX Fundamentals" — human-centered design workshop, UI UX designer Kathmandu.
+
+## Services & Offerings
+- Fractional product design leader for scaling startups and enterprise teams
+- AI product strategy consultant — LLM interface design, agentic workflow UX
+- Design systems consultant — Figma token architecture, design-to-dev handoff
+- Product discovery sprints — 2-week validated prototype delivery
+- Healthcare UX consultant — clinical interface design, HIPAA-compliant UX
 
 ## Links & Profiles
 - Website: https://dijup.com

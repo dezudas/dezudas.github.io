@@ -76,6 +76,7 @@ export interface Article {
   tag: string
   readTime: string
   date?: string
+  updatedAt?: string
   title: string
   summary: string
   takeaways?: string[]
